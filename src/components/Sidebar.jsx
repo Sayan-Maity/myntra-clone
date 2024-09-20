@@ -1,6 +1,6 @@
 import { useFilterStore } from '../store';
 import useProductStore from '../store/slices/productStore';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import GenderFilter from './filters/GenderFilter';
 import BrandFilter from './filters/BrandFilter';
 import CategoryFilter from './filters/CategoryFilter';
@@ -9,7 +9,7 @@ import DiscountFilter from './filters/DiscountFilter';
 import PriceRangeFilter from "./filters/PriceRangeFilter"
 
 const Sidebar = () => {
-  const { products, fetchProducts } = useProductStore();
+  const { products } = useProductStore();
   const {
     genderFilter,
     setGenderFilter,
@@ -26,10 +26,6 @@ const Sidebar = () => {
     discountRateFilter,
     setDiscountRateFilter
   } = useFilterStore();
-
-  useEffect(() => {
-    fetchProducts();
-  }, [fetchProducts]);
 
   const genderFilteredProducts = products.filter(product => product.gender === genderFilter);
   const uniqueCategories = [...new Set(genderFilteredProducts.map(product => product?.category))];
