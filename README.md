@@ -17,6 +17,9 @@ Its the clone of the Myntra shopping page, with the vast filtering features and 
     - Popularity
     - Trending
     - Recommended
+- Filtering is given the highest priority, like if user is in women section, then only the women's brands and colors will be shown (not every brands from all the genders and vice-versa)
+- Pagination is used for better user experience (each page contains 10 products)
+- A dummy product JSON is being created for rendering all the products.
 - UI of Myntra is not perfectly responsive, still while building the project,
   responsiveness is taken care of.
 - The sidebar behaves as a hamburger menu in mobile screens
