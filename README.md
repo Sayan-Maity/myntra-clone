@@ -1,6 +1,4 @@
 # Frontend Assignment
-
-## Description
 Its the clone of the Myntra shopping page, with the vast filtering features and the product display.
 
 ## Features
