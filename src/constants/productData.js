@@ -798,4 +798,38 @@ export const productData = [
       },
     ],
   },
+  {
+    id: "2NBQMJIMO92",
+    description:
+      "KOTTY Women's High Rise Viscose Rayon Relaxed Fit Korean Trousers",
+    imageUrls: [
+      "https://m.media-amazon.com/images/I/61jfBIZmcmL._SY741_.jpg",
+      "https://m.media-amazon.com/images/I/611yAQrsWBL._SY741_.jpg",
+      "https://m.media-amazon.com/images/I/910PlFIFHwL._SY741_.jpg",
+    ],
+    category: "trouser",
+    brand: "KOTTY",
+    color: "white",
+    price: 2599,
+    gender: "women",
+    discountRate: 92,
+    size: ["M", "L", "XL"],
+    popularity: 4.9,
+    trending: false,
+    recommended: true,
+    feedback: [
+      {
+        review: 3.2,
+        comment: "Color is not so good.",
+      },
+      {
+        review: 3.9,
+        comment: "Delivery was a bit late than expected.",
+      },
+      {
+        review: 4.6,
+        comment: "Best product ever had.",
+      },
+    ],
+  },
 ];
